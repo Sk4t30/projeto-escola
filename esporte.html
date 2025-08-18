@@ -1,78 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escola - Área de Esportes</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="esporte.css" />
 </head>
+
 <body>
 
   <header>
-    <button class="hamburguer" id="hamburguer">&#9776;</button>
+    <!-- Hamburguer abre menu lateral com links externos -->
+    <button class="hamburguer" id="hamburguer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
+    <!-- Logo central -->
     <div class="logo-central">
-      <img src="assets/logo.png" alt="Símbolo da escola" />
+      <img src="imagem-logo/Projeto Remover fundo.png" alt="Símbolo da escola" />
     </div>
 
+    <h1 class="nome-escola">E.E. Alberto Santos Dumont</h1>
+
+    <!-- Nav para SECTIONS (no header canto direito) -->
     <nav class="menu-topo">
       <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#modalidades">Modalidades</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#inicio"><i class='bx bx-home'></i> Início</a></li>
+        <li><a href="#modalidades"><i class='bx bx-dumbbell'></i> Modalidades</a></li>
+        <li><a href="#galeria"><i class='bx bx-image'></i> Galeria</a></li>
+        <li><a href="#trofeus"><i class='bx bx-trophy'></i> Troféus</a></li>
       </ul>
     </nav>
 
-    <nav id="menu">
+    <!-- Nav LATERAL (links externos) -->
+    <nav id="menu-lateral">
       <ul>
-        <li><a href="...">Início</a></li>
-        <li><a href="...">Modalidades</a></li>
-        <li><a href="...">Galeria</a></li>
-        <li><a href="...">Contato</a></li>
+        <li><a href="https://site1.com" target="_blank">Site 1</a></li>
+        <li><a href="https://site2.com" target="_blank">Site 2</a></li>
+        <li><a href="https://site3.com" target="_blank">Site 3</a></li>
       </ul>
     </nav>
-
   </header>
 
+  <!-- fim header -->
+
   <section id="inicio" class="hero">
-    <h2>Transformando energia em talento</h2>
+    <h2>"Esporte é mais que jogo, é vida"</h2>
     <p>Descubra as atividades esportivas que fazem a diferença na nossa escola!</p>
-    <img src="assets/esporte-destaque.jpg" alt="Esportes na escola">
   </section>
 
-  <section id="modalidades" class="modalidades">
-    <h2>Nossas Modalidades</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="assets/futebol.jpg" alt="Futebol">
-        <h3>Futebol</h3>
+  <section id="modalidade" class="modalidades" data-animar>
+    <h2><i class='bx bx-dumbbell'></i> Modalidades</h2>
+
+    <div class="carrossel-container">
+      <!-- Carrossel 1 -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="imagens-modalidades/transferir (36).jfif" alt="Imagem 1">
+          <img src="imagens-modalidades/transferir (37).jfif" alt="Imagem 2">
+          <img src="imagens-modalidades/transferir (38).jfif" alt="Imagem 3">
+        </div>
+        <button class="next">&#10095;</button>
       </div>
-      <div class="card">
-        <img src="assets/volei.jpg" alt="Vôlei">
-        <h3>Vôlei</h3>
+
+      <!-- Carrossel 2 -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="imagens-modalidades/transferir (37).jfif" alt="Imagem 4">
+          <img src="imagens-modalidades/transferir (39).jfif" alt="Imagem 5">
+          <img src="imagens-modalidades/transferir (36).jfif" alt="Imagem 6">
+        </div>
+        <button class="next">&#10095;</button>
       </div>
-      <div class="card">
-        <img src="assets/atletismo.jpg" alt="Basquete">
-        <h3>Basquete</h3>
+
+      <!-- Carrossel 3 -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="assets/galeria7.jpg" alt="Imagem 7">
+          <img src="assets/galeria8.jpg" alt="Imagem 8">
+          <img src="assets/galeria9.jpg" alt="Imagem 9">
+        </div>
+        <button class="next">&#10095;</button>
       </div>
     </div>
   </section>
 
-  <section id="galeria" class="galeria">
-    <h2>Galeria de Fotos</h2>
+  <section id="galeria" class="galeria" data-animar>
+    <h2><i class='bx bx-image'></i> Galeria de Fotos</h2>
+
     <div class="grid">
-      <img src="assets/galeria1.jpg" alt="Imagem 1">
-      <img src="assets/galeria2.jpg" alt="Imagem 2">
-      <img src="assets/galeria3.jpg" alt="Imagem 3">
-      <img src="assets/galeria4.jpg" alt="Imagem 4">
+      <img src="imagens-modalidades/transferir (36).jfif" alt="Imagem 1">
+      <img src="imagens-modalidades/transferir (37).jfif" alt="Imagem 2">
+      <img src="imagens-modalidades/transferir (38).jfif" alt="Imagem 3">
+      <img src="imagens-modalidades/transferir (39).jfif" alt="Imagem 4">
+      <img src="assets/galeria7.jpg" alt="Imagem 5">
+      <img src="assets/galeria8.jpg" alt="Imagem 6">
+      <img src="assets/galeria9.jpg" alt="Imagem 7">
     </div>
   </section>
 
-  <footer id="contato">
-    <p>&copy; 2025 Escola Esportiva - Todos os direitos reservados</p>
-  </footer>
+  <section id="trofeus" class="trofeus">
+    <h2><i class='bx bx-trophy'></i> Trofeus</h2>
+
+    <div class="carrossel-container">
+      <!-- Carrossel 1 -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="imagens-modalidades/transferir (36).jfif" alt="Imagem 1">
+          <img src="imagens-modalidades/transferir (37).jfif" alt="Imagem 2">
+          <img src="imagens-modalidades/transferir (38).jfif" alt="Imagem 3">
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <!-- Carrossel 2 -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="imagens-modalidades/transferir (37).jfif" alt="Imagem 4">
+          <img src="imagens-modalidades/transferir (39).jfif" alt="Imagem 5">
+          <img src="imagens-modalidades/transferir (36).jfif" alt="Imagem 6">
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <!-- Carrossel 3 -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <div class="carousel-images">
+          <img src="assets/galeria7.jpg" alt="Imagem 7">
+          <img src="assets/galeria8.jpg" alt="Imagem 8">
+          <img src="assets/galeria9.jpg" alt="Imagem 9">
+        </div>
+        <button class="next">&#10095;</button>
+      </div>
+    </div>
+  </section>
+
+ <footer id="contato">
+  <div class="footer-conteudo">
+    <img src="imagem-logo/Projeto Remover fundo.png" alt="Logo da Escola" class="footer-logo">
+    <h3 class="footer-nome">E.E. Alberto Santos Dumont</h3>
+
+    <div class="footer-links">
+      <a href="tel:+551636303424"><i class='bx bx-phone'></i> (16) 3630-3424</a>
+      <a href="https://www.instagram.com/escola.asd/" target="_blank">
+        <i class='bx bxl-instagram'></i> @escola.asd
+      </a>
+    </div>
+  </div>
+  <p class="direitos">© 2025 E.E. Alberto Santos Dumont - Todos os direitos reservados</p>
+</footer>
+
+
 
   <script src="esporte.js" defer></script>
 </body>
+
 </html>
