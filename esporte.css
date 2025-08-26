@@ -78,7 +78,7 @@ header {
 
 #menu-lateral a {
   text-decoration: none;
-  color: #ffffff ;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -176,8 +176,10 @@ header {
 
 /* BOTÃO HAMBURGUER BONITO */
 .hamburguer {
-  width: 40px; /* maior largura */
-  height: 30px; /* maior altura */
+  width: 40px;
+  /* maior largura */
+  height: 30px;
+  /* maior altura */
   background: none;
   border: none;
   cursor: pointer;
@@ -190,7 +192,8 @@ header {
 
 .hamburguer span {
   display: block;
-  height: 4px; /* linha mais grossa */
+  height: 4px;
+  /* linha mais grossa */
   width: 100%;
   background-color: var(--cor-secundaria);
   border-radius: 2px;
@@ -464,13 +467,15 @@ footer {
 .galeria .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px; /* mais espaçamento */
+  gap: 20px;
+  /* mais espaçamento */
   margin-top: 2rem;
 }
 
 .galeria .grid img {
   width: 100%;
-  height: 220px; /* aumenta o tamanho */
+  height: 220px;
+  /* aumenta o tamanho */
   border-radius: 12px;
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -499,7 +504,7 @@ footer {
   width: 70px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .footer-nome {
@@ -552,12 +557,14 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6px; /* mais espaçamento entre as linhas */
+    gap: 6px;
+    /* mais espaçamento entre as linhas */
     margin-bottom: 0.6rem;
   }
 
   .hamburguer span {
-    height: 5px; /* linhas mais grossas */
+    height: 5px;
+    /* linhas mais grossas */
     border-radius: 3px;
   }
 
@@ -607,67 +614,14 @@ footer {
 }
 
 .carousel-images img {
-  min-width: 100%;   /* cada imagem ocupa 100% do espaço do carrossel */
-  height: 250px;     /* altura padrão */
-  object-fit: cover; /* preenche bem sem distorcer */
+  min-width: 100%;
+  /* cada imagem ocupa 100% do espaço do carrossel */
+  height: 250px;
+  /* altura padrão */
+  object-fit: cover;
+  /* preenche bem sem distorcer */
   flex-shrink: 0;
 }
-
-
-@media (max-width: 600px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.8rem 1rem;
-  }
-
-  /* Botão hambúrguer mais grosso e separado */
-  .hamburguer {
-    width: 35px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px; /* mais espaçamento entre as linhas */
-    margin-bottom: 0.6rem;
-  }
-
-  .hamburguer span {
-    height: 5px; /* linhas mais grossas */
-    border-radius: 3px;
-  }
-
-  /* Nome da escola em cima */
-  .nome-escola {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 0.4rem;
-  }
-
-  /* Logo logo abaixo do nome */
-  .logo-central {
-    position: relative;
-    transform: none;
-    margin: 0.3rem 0 0;
-  }
-
-  .logo-central img {
-    width: 80px;
-    height: 80px;
-  }
-
-  /* Esconde menu topo no mobile */
-  .menu-topo {
-    display: none;
-  }
-
-  #menu-lateral {
-    width: 200px;
-  }
-}
-
-
 
 .modalidades .grid,
 .trofeus .grid {
@@ -683,4 +637,68 @@ footer {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem 2.5rem;
+    /* espaço extra embaixo para caber a logo */
+    position: relative;
+  }
+
+  /* Botão hambúrguer na lateral esquerda */
+  .hamburguer {
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    margin: 0;
+    order: 0;
+  }
+
+  .hamburguer span {
+    height: 5px;
+    border-radius: 3px;
+  }
+
+
+  .nome-escola {
+    font-size: 1rem;
+    order: 5;
+    position: relative;
+    top: 45px;
+    margin: 4;
+    text-align: center;
+    transform: translateX(-10%); /* centraliza certinho */
+  }
+
+  /* Logo centralizada dentro do header */
+  .logo-central {
+    position: absolute;
+    top: -10px;
+    /* desce um pouco pra não sair da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    order: 1;
+  }
+
+  .logo-central img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Esconde menu topo */
+  .menu-topo {
+    display: none;
+  }
+
+  #menu-lateral {
+    width: 200px;
+  }
 }
